@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSC 203 | Discrete Structures</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f4f7fa;
+      color: #222;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* === NAVIGATION === */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #003973;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.7rem;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff7a00;
+    }
+
+    header {
+      background: linear-gradient(135deg, #003973, #e5e5be);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 5rem;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Scroll indicator arrow */
+    .scroll-down {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      animation: bounce 1.5s infinite;
+      color: white;
+      cursor: pointer;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translate(-50%, 0);
+      }
+      50% {
+        transform: translate(-50%, 10px);
+      }
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, h3 {
+      color: #003973;
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      margin-top: 2rem;
+      border-top: 2px solid #eee;
+      padding-top: 1.5rem;
+    }
+
+    footer {
+      background: #003973;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1rem;
+    }
+
+    footer p {
+      margin-bottom: 1rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #ff7a00;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background: #e86c00;
+      transform: scale(1.05);
+    }
+
+    .signature {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #d1d1d1;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      main {
+        padding: 1.5rem;
+      }
+      nav a {
+        margin: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#topics">Topics</a>
+    <a href="#goals">Goals</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>CSC 203</h1>
+    <p><strong>Discrete Structures</strong></p>
+    <a href="#contact" class="scroll-down">↓</a>
+  </header>
+
+  <main>
+    <h2 id="topics">All Topics to Focus On</h2>
+    <p>
+      This 200-level Computer Science course is quite demanding and will require your best effort. Below are the main topics to master:
+    </p>
+    <ul>
+      <li>Logic and Proofs</li>
+      <li>Sets, Relations, and Functions</li>
+      <li>Algorithms and Complexity</li>
+      <li>Combinatorics</li>
+      <li>Graph Theory</li>
+      <li>Boolean Algebra</li>
+    </ul>
+
+    <section id="goals">
+      <h3>Goals</h3>
+      <p><em>Key objectives to strengthen your understanding of CSC 203:</em></p>
+      <ol>
+        <li><strong>Logic and Proofs:</strong> Master truth tables and write 20 proofs.</li>
+        <li><strong>Sets, Functions, and Relations:</strong> Solve 50 problems (Venn, injectivity, etc.).</li>
+        <li><strong>Counting and Graphs:</strong> Complete 10 graph problems and 20 combinatorics exercises.</li>
+        <li><strong>Induction, Recurrence, and Review:</strong> Solve 5 induction proofs and 3 recurrences.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>
+      Need the <strong>MIT e-textbook</strong> for CSC 203 or want a <strong>private online class</strong> to master Discrete Structures?  
+      Message me on WhatsApp for access to all the materials and personalized tutoring.
+    </p>
+    <a href="https://wa.me/+2348163886358" target="_blank" class="cta-button">Message Me Now</a>
+    <div class="signature">Designed by <strong>HCODA</strong></div>
+  </footer>
+</body>
+</html>
